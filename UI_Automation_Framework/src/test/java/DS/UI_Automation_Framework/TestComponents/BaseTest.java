@@ -1,10 +1,16 @@
 package DS.UI_Automation_Framework.TestComponents;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -13,9 +19,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import DS.UI_Automation_Framework.pageobjects.LandingPage;
+import DS.UI_Automation_Framework.resources.ExtentReportNG;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseTest {
+public class BaseTest extends ExtentReportNG {
 	
 	public Properties prop;
 	public LandingPage landingPage;
@@ -65,4 +72,24 @@ public class BaseTest {
 		System.out.println("Completed");
 	}
 
+	public String getScreenshot(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File Dest = new File(System.getProperty("user.dir") + "\\reports\\"+ExtentReportNG.TimeStamp+"\\" + testCaseName + "_" + getCurrentDate()+"_"+getCurrentTime() + ".png");
+		FileUtils.copyFile(source, Dest);
+		return System.getProperty("user.dir") + "//reports//" + testCaseName + "_" + getCurrentDate()+"_"+getCurrentTime() + ".png";
+	}
+
+	private static String getCurrentDate() {
+		SimpleDateFormat sdfDate = new SimpleDateFormat("MM_dd_YYYY");
+		Date now = new Date();
+		return sdfDate.format(now);
+	}
+
+	private static String getCurrentTime() {
+		SimpleDateFormat sdfDate = new SimpleDateFormat("HH_mm_ss");
+		Date now = new Date();
+		return sdfDate.format(now);
+	}
+	
 }

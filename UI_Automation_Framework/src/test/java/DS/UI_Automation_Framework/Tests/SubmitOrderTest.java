@@ -3,14 +3,10 @@ package DS.UI_Automation_Framework.Tests;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -129,24 +125,6 @@ public class SubmitOrderTest extends BaseTest {
 		return new Object[][] { { data.get(0) }, { data.get(1) }, { data.get(2) } };
 	}
 
-	public String getScreenshot(String testCaseName) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		File Dest = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + "_" + getCurrentDate()+"_"+getCurrentTime() + ".png");
-		FileUtils.copyFile(source, Dest);
-		return System.getProperty("user.dir") + "//reports//" + testCaseName + "_" + getCurrentDate()+"_"+getCurrentTime() + ".png";
-	}
-
-	private static String getCurrentDate() {
-		SimpleDateFormat sdfDate = new SimpleDateFormat("MM-dd-YYYY");
-		Date now = new Date();
-		return sdfDate.format(now);
-	}
-
-	private static String getCurrentTime() {
-		SimpleDateFormat sdfDate = new SimpleDateFormat("HH:mm:ss");
-		Date now = new Date();
-		return sdfDate.format(now);
-	}
+	
 
 }

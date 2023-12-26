@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest">
+      <class name="DS.UI_Automation_Framework.Tests.ErrorValidationsTest">
         <methods>
-          <include name="submitOrderWithJson" invocation-numbers="2"/>
+          <include name="LoginErrorValidations"/>
           <include name="closeApplication"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- DS.UI_Automation_Framework.Tests.SubmitOrderTest -->
+      </class> <!-- DS.UI_Automation_Framework.Tests.ErrorValidationsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

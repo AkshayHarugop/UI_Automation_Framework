@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\aha5\AppData\Local\Temp\testng-eclipse--1821271557\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\aha5\git\UI_Automation_Framework\UI_Automation_Framework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,31 +91,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="LoginErrorValidations">LoginErrorValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="OrderHistoryTest">OrderHistoryTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="ProductErrorValidations">ProductErrorValidations</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)">submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)">submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,13 +175,128 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginErrorValidations">
+                  </a> <!-- LoginErrorValidations -->
+                  <span class="method-name">LoginErrorValidations</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.toast-message&quot;}
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20098cc87fc046d0a46d3e7f1ee3ed13, findElement {using=css selector, value=div.toast-message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62953/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at DS.UI_Automation_Framework.pageobjects.LandingPage.getErrorMessage(LandingPage.java:49)
+	at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:23)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductErrorValidations">
+                  </a> <!-- ProductErrorValidations -->
+                  <span class="method-name">ProductErrorValidations</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="OrderHistoryTest">
+                  </a> <!-- OrderHistoryTest -->
+                  <span class="method-name">OrderHistoryTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder">
+                  </a> <!-- submitOrder -->
+                  <span class="method-name">submitOrder</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)">
+                  </a> <!-- submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India) -->
+                  <span class="method-name">submitOrderWithDataProvider</span>
+                  <span class="parameters">(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)">
+                  </a> <!-- submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives) -->
+                  <span class="method-name">submitOrderWithDataProvider</span>
+                  <span class="parameters">(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">
+                  </a> <!-- submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...) -->
+                  <span class="method-name">submitOrderWithHashmap</span>
+                  <span class="parameters">({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test@123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">
+                  </a> <!-- submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123}) -->
+                  <span class="method-name">submitOrderWithHashmap</span>
+                  <span class="parameters">({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">
+                  </a> <!-- submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123}) -->
+                  <span class="method-name">submitOrderWithJson</span>
+                  <span class="parameters">({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">
@@ -149,123 +313,141 @@
                   <span class="parameters">({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test@123})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})">
-                  </a> <!-- submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123}) -->
-                  <span class="method-name">submitOrderWithJson</span>
-                  <span class="parameters">({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\aha5\AppData\Local\Temp\testng-eclipse--1821271557\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\aha5\git\UI_Automation_Framework\UI_Automation_Framework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;DS.UI_Automation_Framework.TestComponents.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;DS.UI_Automation_Framework.Tests.SubmitOrderTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;submitOrderWithJson&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- DS.UI_Automation_Framework.Tests.SubmitOrderTest --&gt;
+      &lt;class name=&quot;DS.UI_Automation_Framework.Tests.SubmitOrderTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DS.UI_Automation_Framework.Tests.ErrorValidationsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test2 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test1 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'submitOrderWithJson')
+data.setCell(0, 1, 'submitOrder')
 data.setCell(0, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(0, 3, 27472);
+data.setCell(0, 3, 29303);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'submitOrderWithJson')
 data.setCell(1, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(1, 3, 26508);
+data.setCell(1, 3, 26263);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'submitOrderWithJson')
 data.setCell(2, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(2, 3, 15652);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 3, 26165);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'submitOrderWithHashmap')
+data.setCell(3, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(3, 3, 26150);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'submitOrderWithDataProvider')
+data.setCell(4, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(4, 3, 26063);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'submitOrderWithHashmap')
+data.setCell(5, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(5, 3, 26027);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginErrorValidations')
+data.setCell(6, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
+data.setCell(6, 3, 22898);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'submitOrderWithDataProvider')
+data.setCell(7, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(7, 3, 15794);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ProductErrorValidations')
+data.setCell(8, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
+data.setCell(8, 3, 15142);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'submitOrderWithJson')
+data.setCell(9, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(9, 3, 14888);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'OrderHistoryTest')
+data.setCell(10, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(10, 3, 1044);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">OrderHistoryTest</span>
-                <br/>
-                <span class="ignored-method-name">submitOrder</span>
-                <br/>
-                <span class="ignored-method-name">submitOrderWithHashmap</span>
-                <br/>
-                <span class="ignored-method-name">submitOrderWithDataProvider</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -276,37 +458,159 @@ return data;
                 <span class="method-name">launchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
-                <span class="method-start">9807 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginErrorValidations</span>
+                <span class="method-start">19636 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrder</span>
+                <span class="method-start">19636 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">25460 ms</span>
+                <span class="method-start">43061 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">25914 ms</span>
+                <span class="method-start">43687 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">48943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">49792 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ProductErrorValidations</span>
+                <span class="method-start">50634 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)</span>
+                <span class="method-start">57021 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">65776 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">72816 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">73186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)</span>
+                <span class="method-start">80298 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">106363 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">109015 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
+                <span class="method-start">115899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">142163 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">142800 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</span>
-                <span class="method-start">32975 ms</span>
+                <span class="method-start">149601 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">60448 ms</span>
+                <span class="method-start">164489 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">61623 ms</span>
+                <span class="method-start">165114 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</span>
-                <span class="method-start">71519 ms</span>
+                <span class="method-start">170456 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">98027 ms</span>
+                <span class="method-start">196622 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">196986 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
+                <span class="method-start">204135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">230286 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">230642 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</span>
+                <span class="method-start">237260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">263288 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">263629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">OrderHistoryTest</span>
+                <span class="method-start">270350 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">271397 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
