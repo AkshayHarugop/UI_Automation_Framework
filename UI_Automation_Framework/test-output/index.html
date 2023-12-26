@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods, 1 failed,   10 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  1 skipped,  10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -106,6 +106,20 @@
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.ErrorValidationsTest" class="method navigator-link" hash-for-method="LoginErrorValidations">LoginErrorValidations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -156,12 +170,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="DS.UI_Automation_Framework.Tests.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -193,9 +207,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20098cc87fc046d0a46d3e7f1ee3ed13, findElement {using=css selector, value=div.toast-message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62953/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
+Command: [918bc3f20e19e6ba72d6a02da1538ab8, findElement {using=css selector, value=div.toast-message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64157/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 918bc3f20e19e6ba72d6a02da1538ab8
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -211,7 +225,7 @@ Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
 	at DS.UI_Automation_Framework.pageobjects.LandingPage.getErrorMessage(LandingPage.java:49)
-	at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:23)
+	at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:24)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
@@ -222,6 +236,29 @@ Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginErrorValidations">
+                  </a> <!-- LoginErrorValidations -->
+                  <span class="method-name">LoginErrorValidations</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email or password.] but found []
+	at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:25)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -299,18 +336,18 @@ Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">
-                  </a> <!-- submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123}) -->
-                  <span class="method-name">submitOrderWithJson</span>
-                  <span class="parameters">({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)">
                   </a> <!-- submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...) -->
                   <span class="method-name">submitOrderWithJson</span>
                   <span class="parameters">({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test@123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})">
+                  </a> <!-- submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123}) -->
+                  <span class="method-name">submitOrderWithJson</span>
+                  <span class="parameters">({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -378,56 +415,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'submitOrder')
-data.setCell(0, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(0, 3, 29303);
+data.setCell(0, 1, 'LoginErrorValidations')
+data.setCell(0, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
+data.setCell(0, 3, 50612);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'submitOrderWithJson')
+data.setCell(1, 1, 'submitOrderWithDataProvider')
 data.setCell(1, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(1, 3, 26263);
+data.setCell(1, 3, 26638);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'submitOrderWithJson')
 data.setCell(2, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(2, 3, 26165);
+data.setCell(2, 3, 26412);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'submitOrderWithHashmap')
+data.setCell(3, 1, 'submitOrderWithJson')
 data.setCell(3, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(3, 3, 26150);
+data.setCell(3, 3, 26224);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'submitOrderWithDataProvider')
+data.setCell(4, 1, 'submitOrderWithHashmap')
 data.setCell(4, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(4, 3, 26063);
+data.setCell(4, 3, 26206);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'submitOrderWithHashmap')
 data.setCell(5, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(5, 3, 26027);
+data.setCell(5, 3, 26088);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginErrorValidations')
-data.setCell(6, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
-data.setCell(6, 3, 22898);
+data.setCell(6, 1, 'submitOrderWithDataProvider')
+data.setCell(6, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(6, 3, 19153);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'submitOrderWithDataProvider')
+data.setCell(7, 1, 'submitOrder')
 data.setCell(7, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(7, 3, 15794);
+data.setCell(7, 3, 18486);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'ProductErrorValidations')
-data.setCell(8, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
-data.setCell(8, 3, 15142);
+data.setCell(8, 1, 'submitOrderWithJson')
+data.setCell(8, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(8, 3, 15512);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'submitOrderWithJson')
-data.setCell(9, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(9, 3, 14888);
+data.setCell(9, 1, 'ProductErrorValidations')
+data.setCell(9, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
+data.setCell(9, 3, 14241);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'OrderHistoryTest')
-data.setCell(10, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
-data.setCell(10, 3, 1044);
+data.setCell(10, 1, 'LoginErrorValidations')
+data.setCell(10, 2, 'DS.UI_Automation_Framework.Tests.ErrorValidationsTest')
+data.setCell(10, 3, 1226);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'OrderHistoryTest')
+data.setCell(11, 2, 'DS.UI_Automation_Framework.Tests.SubmitOrderTest')
+data.setCell(11, 3, 1117);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -453,6 +494,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
@@ -461,156 +509,164 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">LoginErrorValidations</span>
-                <span class="method-start">19636 ms</span>
+                <span class="method-start">21546 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">submitOrder</span>
-                <span class="method-start">19636 ms</span>
+                <span class="method-start">21548 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">43061 ms</span>
+                <span class="method-start">22816 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">43687 ms</span>
+                <span class="method-start">27670 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">48943 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">launchApplication</span>
-                <span class="method-start">49792 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">ProductErrorValidations</span>
-                <span class="method-start">50634 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginErrorValidations</span>
+                <span class="method-start">34598 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">40042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">40846 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithDataProvider(test_all_leader_ds2@gmail.com, Test@123, IPHONE 13 PRO, India)</span>
-                <span class="method-start">57021 ms</span>
+                <span class="method-start">48164 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">65776 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">closeApplication</span>
-                <span class="method-start">72816 ms</span>
+                <span class="method-start">74803 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">73186 ms</span>
+                <span class="method-start">75663 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithDataProvider(test_all_leader_ds3@gmail.com, Test@123, ADIDAS ORIGINAL, Maldives)</span>
-                <span class="method-start">80298 ms</span>
+                <span class="method-start">82597 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">106363 ms</span>
+                <span class="method-start">85845 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">109015 ms</span>
+                <span class="method-start">86549 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
-                <span class="method-start">115899 ms</span>
+                <span class="method-name">ProductErrorValidations</span>
+                <span class="method-start">94259 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">142163 ms</span>
+                <span class="method-start">101752 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">142800 ms</span>
+                <span class="method-start">102940 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.ErrorValidationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">108503 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DS.UI_Automation_Framework.Tests.SubmitOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
+                <span class="method-start">110801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApplication</span>
+                <span class="method-start">126314 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">126790 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithJson({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</span>
-                <span class="method-start">149601 ms</span>
+                <span class="method-start">131566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">164489 ms</span>
+                <span class="method-start">157792 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">165114 ms</span>
+                <span class="method-start">158091 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithJson({EmailId=akshay@gmail.com, Country=Australia, ProductName=ZARA COAT 3, Password=Test@123})</span>
-                <span class="method-start">170456 ms</span>
+                <span class="method-start">163826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">196622 ms</span>
+                <span class="method-start">190238 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">196986 ms</span>
+                <span class="method-start">191319 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithHashmap({EmailId=test_all_leader_ds2@gmail.com, Country=India, ProductName=IPHONE 13 PRO, Password=Test@123})</span>
-                <span class="method-start">204135 ms</span>
+                <span class="method-start">196977 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">230286 ms</span>
+                <span class="method-start">223184 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">230642 ms</span>
+                <span class="method-start">223524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">submitOrderWithHashmap({EmailId=test_all_leader_ds3@gmail.com, Country=Maldives, ProductName=ADIDAS ORIGINAL, Password=Test...)</span>
-                <span class="method-start">237260 ms</span>
+                <span class="method-start">229571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">263288 ms</span>
+                <span class="method-start">255660 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">263629 ms</span>
+                <span class="method-start">256212 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">OrderHistoryTest</span>
-                <span class="method-start">270350 ms</span>
+                <span class="method-start">262278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">271397 ms</span>
+                <span class="method-start">263397 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,60 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="10" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-26T12:07:17Z" name="Suite" finished-at="2023-12-26T12:11:49Z" duration-ms="271848">
+  <suite started-at="2023-12-26T12:51:54Z" name="Suite" finished-at="2023-12-26T12:56:18Z" duration-ms="263756">
     <groups>
     </groups>
-    <test started-at="2023-12-26T12:07:17Z" name="Test2" finished-at="2023-12-26T12:08:24Z" duration-ms="66288">
+    <test started-at="2023-12-26T12:51:54Z" name="Test2" finished-at="2023-12-26T12:53:43Z" duration-ms="109172">
       <class name="DS.UI_Automation_Framework.Tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:07:18Z" name="launchApplication" finished-at="2023-12-26T12:07:37Z" duration-ms="19635" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:51:54Z" name="launchApplication" finished-at="2023-12-26T12:52:16Z" duration-ms="21545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidations()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:07:37Z" name="LoginErrorValidations" finished-at="2023-12-26T12:08:00Z" duration-ms="22898" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="LoginErrorValidations()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:52:16Z" name="LoginErrorValidations" finished-at="2023-12-26T12:52:17Z" duration-ms="1226" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.toast-message"}
-  (Session info: chrome=120.0.6099.129)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20098cc87fc046d0a46d3e7f1ee3ed13, findElement {using=css selector, value=div.toast-message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62953/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13]]>
+              <![CDATA[expected [Incorrect email or password.] but found []]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.toast-message"}
-  (Session info: chrome=120.0.6099.129)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [20098cc87fc046d0a46d3e7f1ee3ed13, findElement {using=css selector, value=div.toast-message}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62953/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20098cc87fc046d0a46d3e7f1ee3ed13
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at DS.UI_Automation_Framework.pageobjects.LandingPage.getErrorMessage(LandingPage.java:49)
-at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:23)
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found []
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,47 +47,125 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:840)
 ]]>
             </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidations -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:52:17Z" name="closeApplication" finished-at="2023-12-26T12:52:22Z" duration-ms="4854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:52:22Z" name="launchApplication" finished-at="2023-12-26T12:52:29Z" duration-ms="6928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="LoginErrorValidations()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:52:29Z" name="LoginErrorValidations" finished-at="2023-12-26T12:53:19Z" duration-ms="50612" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div.toast-message"}
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [918bc3f20e19e6ba72d6a02da1538ab8, findElement {using=css selector, value=div.toast-message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64157/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 918bc3f20e19e6ba72d6a02da1538ab8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div.toast-message"}
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [918bc3f20e19e6ba72d6a02da1538ab8, findElement {using=css selector, value=div.toast-message}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\aha5\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64157}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64157/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 918bc3f20e19e6ba72d6a02da1538ab8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+at DS.UI_Automation_Framework.pageobjects.LandingPage.getErrorMessage(LandingPage.java:49)
+at DS.UI_Automation_Framework.Tests.ErrorValidationsTest.LoginErrorValidations(ErrorValidationsTest.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidations -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:08:01Z" name="closeApplication" finished-at="2023-12-26T12:08:01Z" duration-ms="625" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:53:20Z" name="closeApplication" finished-at="2023-12-26T12:53:21Z" duration-ms="703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:08:01Z" name="launchApplication" finished-at="2023-12-26T12:08:08Z" duration-ms="6947" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:53:21Z" name="launchApplication" finished-at="2023-12-26T12:53:28Z" duration-ms="7710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidations()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:08:08Z" name="ProductErrorValidations" finished-at="2023-12-26T12:08:23Z" duration-ms="15142" status="PASS">
+        <test-method signature="ProductErrorValidations()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:53:28Z" name="ProductErrorValidations" finished-at="2023-12-26T12:53:43Z" duration-ms="14241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidations -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@6a1d204a]" started-at="2023-12-26T12:08:23Z" name="closeApplication" finished-at="2023-12-26T12:08:24Z" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.ErrorValidationsTest@4b6579e8]" started-at="2023-12-26T12:53:43Z" name="closeApplication" finished-at="2023-12-26T12:53:43Z" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- DS.UI_Automation_Framework.Tests.ErrorValidationsTest -->
     </test> <!-- Test2 -->
-    <test started-at="2023-12-26T12:07:17Z" name="Test1" finished-at="2023-12-26T12:11:49Z" duration-ms="271848">
+    <test started-at="2023-12-26T12:51:54Z" name="Test1" finished-at="2023-12-26T12:56:18Z" duration-ms="263756">
       <class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:07:18Z" name="launchApplication" finished-at="2023-12-26T12:07:37Z" duration-ms="19635" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:51:54Z" name="launchApplication" finished-at="2023-12-26T12:52:16Z" duration-ms="21548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:07:37Z" name="submitOrder" finished-at="2023-12-26T12:08:06Z" duration-ms="29303" status="PASS">
+        <test-method signature="submitOrder()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:52:16Z" name="submitOrder" finished-at="2023-12-26T12:52:34Z" duration-ms="18486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:06Z" name="closeApplication" finished-at="2023-12-26T12:08:07Z" duration-ms="842" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:52:34Z" name="closeApplication" finished-at="2023-12-26T12:52:35Z" duration-ms="800" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:07Z" name="launchApplication" finished-at="2023-12-26T12:08:15Z" duration-ms="7228" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:52:35Z" name="launchApplication" finished-at="2023-12-26T12:52:42Z" duration-ms="7318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:15Z" name="submitOrderWithDataProvider" data-provider="getData" finished-at="2023-12-26T12:08:30Z" duration-ms="15794" status="PASS">
+        <test-method signature="submitOrderWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:52:42Z" name="submitOrderWithDataProvider" data-provider="getData" finished-at="2023-12-26T12:53:09Z" duration-ms="26638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,15 +191,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithDataProvider -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:30Z" name="closeApplication" finished-at="2023-12-26T12:08:31Z" duration-ms="369" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:09Z" name="closeApplication" finished-at="2023-12-26T12:53:10Z" duration-ms="859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:31Z" name="launchApplication" finished-at="2023-12-26T12:08:38Z" duration-ms="7112" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:10Z" name="launchApplication" finished-at="2023-12-26T12:53:17Z" duration-ms="6933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:08:38Z" name="submitOrderWithDataProvider" data-provider="getData" finished-at="2023-12-26T12:09:04Z" duration-ms="26063" status="PASS">
+        <test-method signature="submitOrderWithDataProvider(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:17Z" name="submitOrderWithDataProvider" data-provider="getData" finished-at="2023-12-26T12:53:36Z" duration-ms="19153" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,15 +225,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithDataProvider -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:04Z" name="closeApplication" finished-at="2023-12-26T12:09:04Z" duration-ms="447" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:36Z" name="closeApplication" finished-at="2023-12-26T12:53:36Z" duration-ms="324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:07Z" name="launchApplication" finished-at="2023-12-26T12:09:13Z" duration-ms="6884" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:37Z" name="launchApplication" finished-at="2023-12-26T12:53:45Z" duration-ms="7861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:13Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:09:40Z" duration-ms="26263" status="PASS">
+        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:53:45Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:54:01Z" duration-ms="15512" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -196,15 +244,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithJson -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:40Z" name="closeApplication" finished-at="2023-12-26T12:09:40Z" duration-ms="637" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:01Z" name="closeApplication" finished-at="2023-12-26T12:54:01Z" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:40Z" name="launchApplication" finished-at="2023-12-26T12:09:47Z" duration-ms="6801" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:01Z" name="launchApplication" finished-at="2023-12-26T12:54:06Z" duration-ms="4775" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:09:47Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:10:02Z" duration-ms="14888" status="PASS">
+        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:06Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:54:32Z" duration-ms="26224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,15 +263,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithJson -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:02Z" name="closeApplication" finished-at="2023-12-26T12:10:03Z" duration-ms="625" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:32Z" name="closeApplication" finished-at="2023-12-26T12:54:32Z" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:03Z" name="launchApplication" finished-at="2023-12-26T12:10:08Z" duration-ms="5342" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:32Z" name="launchApplication" finished-at="2023-12-26T12:54:38Z" duration-ms="5735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:08Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:10:34Z" duration-ms="26165" status="PASS">
+        <test-method signature="submitOrderWithJson(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:54:38Z" name="submitOrderWithJson" data-provider="getDataJson" finished-at="2023-12-26T12:55:04Z" duration-ms="26412" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -234,15 +282,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithJson -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:34Z" name="closeApplication" finished-at="2023-12-26T12:10:34Z" duration-ms="363" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:04Z" name="closeApplication" finished-at="2023-12-26T12:55:06Z" duration-ms="1081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:35Z" name="launchApplication" finished-at="2023-12-26T12:10:42Z" duration-ms="7149" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:06Z" name="launchApplication" finished-at="2023-12-26T12:55:11Z" duration-ms="5658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithHashmap(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:10:42Z" name="submitOrderWithHashmap" data-provider="getDataHashmap" finished-at="2023-12-26T12:11:08Z" duration-ms="26150" status="PASS">
+        <test-method signature="submitOrderWithHashmap(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:11Z" name="submitOrderWithHashmap" data-provider="getDataHashmap" finished-at="2023-12-26T12:55:37Z" duration-ms="26206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,15 +301,15 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithHashmap -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:08Z" name="closeApplication" finished-at="2023-12-26T12:11:08Z" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:37Z" name="closeApplication" finished-at="2023-12-26T12:55:38Z" duration-ms="340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:08Z" name="launchApplication" finished-at="2023-12-26T12:11:15Z" duration-ms="6618" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:38Z" name="launchApplication" finished-at="2023-12-26T12:55:44Z" duration-ms="6047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrderWithHashmap(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:15Z" name="submitOrderWithHashmap" data-provider="getDataHashmap" finished-at="2023-12-26T12:11:41Z" duration-ms="26027" status="PASS">
+        <test-method signature="submitOrderWithHashmap(java.util.HashMap)[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:55:44Z" name="submitOrderWithHashmap" data-provider="getDataHashmap" finished-at="2023-12-26T12:56:10Z" duration-ms="26088" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -272,19 +320,19 @@ at java.base/java.lang.Thread.run(Thread.java:840)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderWithHashmap -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:41Z" name="closeApplication" finished-at="2023-12-26T12:11:41Z" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:56:10Z" name="closeApplication" finished-at="2023-12-26T12:56:10Z" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:41Z" name="launchApplication" finished-at="2023-12-26T12:11:48Z" duration-ms="6721" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:56:10Z" name="launchApplication" finished-at="2023-12-26T12:56:16Z" duration-ms="6066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:48Z" name="OrderHistoryTest" finished-at="2023-12-26T12:11:49Z" depends-on-methods="DS.UI_Automation_Framework.Tests.SubmitOrderTest.submitOrder" duration-ms="1044" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:56:16Z" name="OrderHistoryTest" finished-at="2023-12-26T12:56:18Z" depends-on-methods="DS.UI_Automation_Framework.Tests.SubmitOrderTest.submitOrder" duration-ms="1117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:11:49Z" name="closeApplication" finished-at="2023-12-26T12:11:49Z" duration-ms="426" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DS.UI_Automation_Framework.Tests.SubmitOrderTest@2cf23c81]" started-at="2023-12-26T12:56:18Z" name="closeApplication" finished-at="2023-12-26T12:56:18Z" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

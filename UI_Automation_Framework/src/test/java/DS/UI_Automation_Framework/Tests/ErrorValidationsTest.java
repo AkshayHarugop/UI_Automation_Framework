@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import DS.UI_Automation_Framework.TestComponents.BaseTest;
+import DS.UI_Automation_Framework.TestComponents.Retry;
 import DS.UI_Automation_Framework.pageobjects.CartPage;
 import DS.UI_Automation_Framework.pageobjects.ProductCatalogue;
 
@@ -16,7 +17,7 @@ public class ErrorValidationsTest extends BaseTest {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test
+	@Test(retryAnalyzer=Retry.class)
 	public void LoginErrorValidations() throws IOException {
 		System.out.println("LoginErrorValidations test execution "+Thread.currentThread().getId());
 		landingPage.loginApplication(prop.getProperty("email"), prop.getProperty("Wpassword"));
