@@ -1,0 +1,20 @@
+[
+	{
+		"EmailId": "test_all_leader_ds2@gmail.com",
+		"Password": "Test@123",
+		"ProductName": "IPHONE 13 PRO",
+		"Country": "India"
+	},
+	{
+		"EmailId": "test_all_leader_ds3@gmail.com",
+		"Password": "Test@123",
+		"ProductName": "ADIDAS ORIGINAL",
+		"Country": "Maldives"
+	},
+	{
+		"EmailId": "akshay@gmail.com",
+		"Password": "Test@123",
+		"ProductName": "ZARA COAT 3",
+		"Country": "Australia"
+	}
+]
