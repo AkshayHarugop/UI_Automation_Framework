@@ -39,7 +39,8 @@ public class BaseTest extends ExtentReportNG {
 	
 	public WebDriver initializeDriver() throws IOException {
 		
-		String BrowserName = prop.getProperty("browser");
+//		String BrowserName = prop.getProperty("browser");
+		String BrowserName = System.getProperty("browser")!=null ? System.getProperty("browser") : prop.getProperty("browser");
 		if (BrowserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();

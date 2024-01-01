@@ -10,9 +10,25 @@
         <methods>
           <include name="LoginErrorValidations"/>
           <include name="closeApplication"/>
+          <include name="ProductErrorValidations"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- DS.UI_Automation_Framework.Tests.ErrorValidationsTest -->
     </classes>
   </test> <!-- Test2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest">
+        <methods>
+          <include name="OrderHistoryTest"/>
+          <include name="submitOrder"/>
+          <include name="submitOrderWithJson"/>
+          <include name="closeApplication"/>
+          <include name="launchApplication"/>
+          <include name="submitOrderWithHashmap"/>
+          <include name="submitOrderWithDataProvider"/>
+        </methods>
+      </class> <!-- DS.UI_Automation_Framework.Tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
