@@ -32,9 +32,13 @@ public class AbstractComponents {
 	
 	@FindBy(xpath="//h1[@class='ng-star-inserted'][text()='Your Orders']")
 	WebElement OrderPage;
+	
+	@FindBy(xpath="//div[@class='heading cf']/h1[text()='My Cart']")
+	WebElement Mycart;
 
 	public CartPage goToCartPage() {
 		routerLink.click();
+		waitForElementToAppear(Mycart);
 		return new CartPage(driver);
 	}
 	
@@ -53,6 +57,6 @@ public class AbstractComponents {
 	}
 
 	public void waitForElementToAppear(WebElement WebElement) {
-		wait.until(ExpectedConditions.invisibilityOf(WebElement));
+		wait.until(ExpectedConditions.visibilityOf(WebElement));
 	}
 }

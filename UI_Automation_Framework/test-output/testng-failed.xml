@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="DS.UI_Automation_Framework.TestComponents.Listeners"/>
-  </listeners>
-  <test thread-count="2" parallel="tests" name="Test1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest">
+      <class name="cucumber.TestNGTestRunner">
         <methods>
-          <include name="OrderHistoryTest"/>
-          <include name="submitOrder"/>
-          <include name="submitOrderWithJson" invocation-numbers="1 2"/>
-          <include name="closeApplication"/>
-          <include name="launchApplication"/>
-          <include name="submitOrderWithHashmap" invocation-numbers="0 1"/>
-          <include name="submitOrderWithDataProvider" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- DS.UI_Automation_Framework.Tests.SubmitOrderTest -->
+      </class> <!-- cucumber.TestNGTestRunner -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

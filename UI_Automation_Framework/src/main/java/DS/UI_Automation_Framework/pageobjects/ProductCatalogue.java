@@ -50,6 +50,12 @@ public class ProductCatalogue extends AbstractComponents {
 		waitForElementToAppear(toastMsg);
 		waitForElementToDisAppear(animation);
 		waitForElementToAppear(routerlink);
+		try {
+			Thread.sleep(2000L);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	

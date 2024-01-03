@@ -11,13 +11,12 @@
 		<classes>
 			<class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest" />
 		</classes>
-	</test> <!--
-	Test -->
+	</test> 
+	
 	<test thread-count="5" name="Test2">
 		<classes>
 			<class name="DS.UI_Automation_Framework.Tests.ErrorValidationsTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+	<!-- Test -->
+</suite> 
