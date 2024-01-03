@@ -4,29 +4,17 @@
   <listeners>
     <listener class-name="DS.UI_Automation_Framework.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="2" parallel="tests" name="Test2(failed)">
-    <classes>
-      <class name="DS.UI_Automation_Framework.Tests.ErrorValidationsTest">
-        <methods>
-          <include name="LoginErrorValidations"/>
-          <include name="closeApplication"/>
-          <include name="ProductErrorValidations"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- DS.UI_Automation_Framework.Tests.ErrorValidationsTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
   <test thread-count="2" parallel="tests" name="Test1(failed)">
     <classes>
       <class name="DS.UI_Automation_Framework.Tests.SubmitOrderTest">
         <methods>
           <include name="OrderHistoryTest"/>
           <include name="submitOrder"/>
-          <include name="submitOrderWithJson"/>
+          <include name="submitOrderWithJson" invocation-numbers="1 2"/>
           <include name="closeApplication"/>
           <include name="launchApplication"/>
-          <include name="submitOrderWithHashmap"/>
-          <include name="submitOrderWithDataProvider"/>
+          <include name="submitOrderWithHashmap" invocation-numbers="0 1"/>
+          <include name="submitOrderWithDataProvider" invocation-numbers="1"/>
         </methods>
       </class> <!-- DS.UI_Automation_Framework.Tests.SubmitOrderTest -->
     </classes>

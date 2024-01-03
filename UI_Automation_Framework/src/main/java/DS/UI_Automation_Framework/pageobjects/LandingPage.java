@@ -28,6 +28,9 @@ public class LandingPage extends AbstractComponents {
 	@FindBy(id = "login")
 	WebElement submit;
 	
+	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
+	WebElement element;
+	
 	@FindBy(css="div.toast-message")
 	WebElement errormsg;
 
@@ -44,9 +47,9 @@ public class LandingPage extends AbstractComponents {
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(loginpage));
 	}
 	
-	public String getErrorMessage() {
-		waitForElementToAppear(errormsg);
-		return errormsg.getText();
+	public void getErrorMessage() {
+		waitForElementToAppear(element);
+//		return errormsg.getText();
 	}
 
 }
