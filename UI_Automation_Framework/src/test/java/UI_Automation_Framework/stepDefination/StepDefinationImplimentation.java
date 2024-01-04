@@ -61,4 +61,10 @@ public class StepDefinationImplimentation extends BaseTest {
 		Assert.assertEquals(msg, "THANKYOU FOR THE ORDER.");
 		driver.close();
 	}
+	
+	@Then("Verify the error msg")
+	public void Verify_the_error_msg() {
+		landingPage.getErrorMessage();
+		driver.close();
+	}
 }
